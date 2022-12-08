@@ -22,7 +22,8 @@
     "nodemailer": "^6.8.0",
     "npm": "^8.19.3",
     "npm-check": "^6.0.1",
-    "pusher": "^5.1.1-beta"
+    "pusher": "^5.1.1-beta",
+    "text-encoding": "^0.7.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
