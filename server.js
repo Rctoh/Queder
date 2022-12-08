@@ -5,12 +5,13 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+const TextEncoder = require('text-encoding');
 
 const mainpageRouter = require('./routes/mainpage')
 const accountRouter = require('./routes/account')
 
 app.use(express.static('public'))
-app.use(bodyParser.urlencoded({limit: '10mb', extended: false}))
+app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose')
